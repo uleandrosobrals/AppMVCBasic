@@ -1,6 +1,7 @@
 #  AppMVCBasic - Sistema de Cadastro de Produtos e Fornecedores
 
 Este repositório contém um sistema de cadastro de produtos e fornecedores chamado AppMVCBasic. O sistema está em construção e possui funcionalidades como registro de login, paginação e utiliza as tecnologias Entity Framework e Identity.
+Esse sistema é focado no backend!
 
 ## Funcionalidades
 
