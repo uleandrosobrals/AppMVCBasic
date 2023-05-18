@@ -7,9 +7,11 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using AppMVCBasic.Data;
 using AppMVCBasic.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace AppMVCBasic.Controllers
 {
+    [Authorize]
     public class ProdutosController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -18,6 +20,8 @@ namespace AppMVCBasic.Controllers
         {
             _context = context;
         }
+
+        [AllowAnonymous]
 
         // GET: Produtos
         public async Task<IActionResult> Index()
